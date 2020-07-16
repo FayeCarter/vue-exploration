@@ -5,6 +5,16 @@ var app = new Vue({
     image: './images/socks.jpg',
     inventory: 10,
     onSale: true,
-    details: ["80% cotton", "20% polyester"]
+    details: ["80% cotton", "20% polyester"],
+    variants: [
+      {
+        variantID: 2234,
+        variantColor: "green"
+      },
+      {
+        variantID: 2235,
+        variantColor: "blue"
+      }
+    ]
   }
 })
