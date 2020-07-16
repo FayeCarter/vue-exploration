@@ -5,6 +5,7 @@ var app = new Vue({
     image: './images/blue-socks.jpg',
     inventory: 10,
     onSale: true,
+    inStock: false,
     details: ["80% cotton", "20% polyester"],
     variants: [
       {
