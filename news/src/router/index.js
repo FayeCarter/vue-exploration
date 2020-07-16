@@ -19,7 +19,7 @@ export default new Router({
       component: New
     },
     {
-      path: '/single',
+      path: '/single/:id',
       name: 'Single',
       component: Single
     }
