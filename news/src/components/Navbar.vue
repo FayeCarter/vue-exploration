@@ -21,5 +21,5 @@ export default {
 }
 .pure-menu a {
   color: white;
-}  
+}
 </style>
