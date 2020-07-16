@@ -1,4 +1,10 @@
 Vue.component('product', {
+  props: {
+    premium: {
+      type: Boolean,
+      required: true
+    }
+  },
   template: `
     <div class="product">
       <div class="product-image">
@@ -25,7 +31,7 @@ Vue.component('product', {
             <li v-for="size in sizes">{{ size }}</li>
           </ul>
         </div>
-
+        <div>Shipping {{ shipping }}</div>
         <div class="cart">
           <p>Cart {{ cart }}</p>
         </div>
@@ -88,11 +94,21 @@ Vue.component('product', {
     },
     onSale() {
       return this.variants[this.selectedVariant].variantSale
+    },
+    shipping() {
+      if (this.premium) {
+        return "Free"
+      } else {
+        return 2.99
+      }
     }
   }
 })
 
 var app = new Vue({
   el: '#app',
+  data: {
+    premium: true
+  }
 
 })
