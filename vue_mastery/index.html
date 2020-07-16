@@ -24,8 +24,13 @@
         <ul>
           <li v-for="detail in details">{{ detail }}</li>
         </ul>
-        <div v-for="variant in variants" :key="variant.variantID">
-          <p @mouseover="updateProduct(variant.variantImage)" >{{ variant.variantColor }}</p>
+        <div v-for="variant in variants" 
+          :key="variant.variantID">
+          <div class="color-box"
+            :style="{ backgroundColor: variant.variantColor }"
+            @mouseover="updateProduct(variant.variantImage)" 
+          ></div>
+          <p>{{ variant.variantColor }}</p>
         </div>
         <div>
           <p>Available sizes</p>
