@@ -1,11 +1,11 @@
 <template>
   <div class="pure-menu pure-menu-horizontal">
-    <di class="container">
+    <div class="container">
       <a href="/" class="pure-menu-heading pure-munu-link">Hacker News</a>
       <ul class="pure-menu-list">
-        <li class="pure-menu-item"><a href="/" class="pure-menu-link">Upload</a></li>
+        <li class="pure-menu-item"><router-link :to="{ path: '/single' }" class="pure-menu-link">Upload</router-link></li>
       </ul>
-    </di>
+    </div>
   </div>
 </template>
 
