@@ -15,6 +15,7 @@ var app = new Vue({
         variantID: 2235,
         variantColor: "blue"
       }
-    ]
+    ],
+    sizes: ["tiny", "small", "medium", "big", "massive"]
   }
 })
