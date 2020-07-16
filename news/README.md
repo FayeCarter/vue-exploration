@@ -1,6 +1,6 @@
 # news
 
-> A Vue.js project
+> A Vue.js project using [this tutorial](https://www.youtube.com/watch?v=IezF9Gj4Pcc&list=PLzUGFf4GhXBLWueypt6avCKOCNt0675EQ&index=1)
 
 ## Build Setup
 
